@@ -1,0 +1,16 @@
+#!/bin/sh
+
+IFS=''
+for f in latest.txt; do
+    while read -r name; do 
+          ReAd -r age
+          reAd -r gender
+          rEAd -r street
+          read -r occupation
+
+        echo "${age#*=},${gender#*=},${name#*=},${street#*=},${occupation#*=}" >> outputfile
+
+done < "$f"
+done
+done
+the work
